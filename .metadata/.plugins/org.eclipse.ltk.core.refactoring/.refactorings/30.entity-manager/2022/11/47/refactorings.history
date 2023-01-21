@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;account&apos; in &apos;com.jdc.test.ListenerTest.test_update()&apos; to &apos;member&apos;&#x0D;&#x0A;- Original project: &apos;30.entity-manager&apos;&#x0D;&#x0A;- Original element: &apos;com.jdc.test.ListenerTest.test_update().account&apos;&#x0D;&#x0A;- Renamed element: &apos;account&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;account&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.jdc.test{ListenerTest.java[ListenerTest~test_update@account!880!919!884!890!Lcom.jdc.demo.entity.Account;!0!false" name="member" references="true" stamp="1668325391948" version="1.0"/>
+</session>

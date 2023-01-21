@@ -1,0 +1,5 @@
+package com.jdc.location.model.repo.custom;
+
+public class BaseRepositoryDafault {
+
+}

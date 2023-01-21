@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-aop-aspectj-style&apos; to &apos;902.spring-aop-aspectj-style&apos;" description="Rename resource &apos;spring-aop-aspectj-style&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/spring-aop-aspectj-style" name="902.spring-aop-aspectj-style" stamp="1670387113622" updateReferences="true"/>
+</session>

@@ -1,0 +1,6 @@
+package com.jdc.location.services.dto;
+
+public class DistrictDto {
+	int getId();
+	
+}

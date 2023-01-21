@@ -1,0 +1,5 @@
+package com.jdc.location.services;
+
+public class LocationService {
+
+}

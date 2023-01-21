@@ -1,0 +1,5 @@
+package com.jdc.location.model.services;
+
+public class StateCriteriaService {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jdc.test.BeanInitTest&apos; to &apos;XMLConfigTest&apos;&#x0D;&#x0A;- Original project: &apos;13.bean-lifecycle&apos;&#x0D;&#x0A;- Original element: &apos;com.jdc.test.BeanInitTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jdc.test.XMLConfigTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BeanInitTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.jdc.test{BeanInitTest.java[BeanInitTest" matchStrategy="1" name="XMLConfigTest" qualified="false" references="true" similarDeclarations="false" stamp="1652327817291" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;101.getting-start-aop&apos; to &apos;900.getting-start-aop&apos;" description="Rename resource &apos;101.getting-start-aop&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/101.getting-start-aop" name="900.getting-start-aop" stamp="1669794164079" updateReferences="true"/>
+</session>

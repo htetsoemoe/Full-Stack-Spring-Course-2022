@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;getting-start-query&apos; to &apos;31.getting-start-query&apos;" description="Rename resource &apos;getting-start-query&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/getting-start-query" name="31.getting-start-query" stamp="1668480054562" updateReferences="true"/>
+</session>

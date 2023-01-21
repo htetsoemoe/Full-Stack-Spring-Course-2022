@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="defaultZoo" class="com.jdc.fullstack.Zoo"></bean>
+
+	<bean id="zooWithThousandAnimals"
+		class="com.jdc.fullstack.ZooFactory"
+		factory-method="zooWithAnimalsCount">
+		<constructor-arg value="1000"></constructor-arg>
+	</bean>
+
+	<bean id="bigZooFactory"
+		class="com.jdc.fullstack.InstanceZooFactory">
+		<constructor-arg name="bigSize" value="true"></constructor-arg>
+	</bean>
+
+	<bean id="smallZooFactory"
+		class="com.jdc.fullstack.InstanceZooFactory">
+		<constructor-arg name="bigSize" value="false"></constructor-arg>
+	</bean>
+	
+	<bean id="smallZoo" factory-bean="smallZooFactory"
+		factory-method="getZoo">
+	</bean>
+	
+	<bean id="bigZoo" factory-bean="bigZooFactory"
+		factory-method="getZoo">
+	</bean>
+</beans>

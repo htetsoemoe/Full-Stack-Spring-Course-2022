@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;asycnContext&apos; in &apos;com.jdc.async.HelloAsync.doGet(...)&apos; to &apos;asyncContext&apos;&#x0D;&#x0A;- Original project: &apos;21.async-request&apos;&#x0D;&#x0A;- Original element: &apos;com.jdc.async.HelloAsync.doGet(HttpServletRequest, HttpServletResponse).asycnContext&apos;&#x0D;&#x0A;- Renamed element: &apos;asycnContext&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;asycnContext&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdc.async{HelloAsync.java[HelloAsync~doGet~QHttpServletRequest;~QHttpServletResponse;@asycnContext!600!640!604!615!Ljavax.servlet.AsyncContext;!0!false" name="asyncContext" references="true" stamp="1658376493588" version="1.0"/>
+</session>

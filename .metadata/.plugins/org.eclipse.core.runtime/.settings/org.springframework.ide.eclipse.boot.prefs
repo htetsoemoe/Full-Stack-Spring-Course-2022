@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.h2=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=spring-data-specification
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.0.1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Data Specification API
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.jdc.spring
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=spring-data-specification
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.jdc.location
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=1.0
+org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

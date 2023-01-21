@@ -1,0 +1,15 @@
+1657430640455	Move compilation units
+1657430726232	Rename package 'com.jdc.form.service'
+1657430770161	Rename package 'com.jdc.form.dto'
+1657430839814	Move compilation units
+1657431324722	Rename resource 'ApplicationContext.xml'
+1657438846373	Rename package 'com.jdc.form.model.converter'
+1657510088358	Rename type 'CourseSelectConverterRegistrator'
+1657510375466	Rename type 'CourseSelectConverter'
+1657510644038	Rename field 'converter'
+1657512731431	Move compilation unit
+1657512761901	Move compilation units
+1657512808170	Move compilation units
+1657512854839	Move compilation units
+1657512864328	Delete elements
+1657512880412	Delete element

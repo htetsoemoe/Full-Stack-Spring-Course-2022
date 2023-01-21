@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="FirstFactoryFinished" class="com.ninja.bean.post.MyFirstFactoryPostProcessor"></bean>
+	<bean name="SecondFactoryFinished" class="com.ninja.bean.post.MySecondFactoryPostProcessor"></bean>
+	
+	<bean name="MyBeanCreationListener" class="com.ninja.bean.post.MyBeanCreationListener"></bean>
+
+</beans>

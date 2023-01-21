@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;user&apos; in &apos;com.ninja.test.HelloEventSubscriber.test()&apos; to &apos;thaw&apos;&#x0D;&#x0A;- Original project: &apos;02-event-model&apos;&#x0D;&#x0A;- Original element: &apos;com.ninja.test.HelloEventSubscriber.test().user&apos;&#x0D;&#x0A;- Renamed element: &apos;user&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;user&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.ninja.test{HelloEventSubscriber.java[HelloEventSubscriber~test@user!835!857!840!843!QUser;!0!false" name="thaw" references="true" stamp="1646815559558" version="1.0"/>
+</session>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="valueHolder" class="com.jdc.bean.di.ValueHolder"
+		p:localDate="2022-04-18" p:utilDate="2022-04-18"></bean>
+		
+	<bean id="conversionService" class="com.jdc.bean.di.CustomConversionService" c:datePattern="yyyy-MM-dd"/>
+
+	<bean id="arrayHolder" class="com.jdc.bean.di.ArrayHolder">
+		<constructor-arg>
+			<array>
+				<value>Java Basic</value>
+				<value>Full Stack Spring</value>
+				<value>Angular</value>
+			</array>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="setHolder" class="com.jdc.bean.di.SetHolder">
+		<property name="numbers">
+			<set>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="listHolder" class="com.jdc.bean.di.ListHolder">
+		<property name="closeDays">
+			<list>
+				<value>SATURDAY</value>
+				<value>SUNDAY</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="mapHolder" class="com.jdc.bean.di.MapHolder">	
+		<property name="dates">
+			<map>
+				<entry key="startDate" value="2022-04-30"></entry>
+				<entry key="endDate" value="2022-10-10"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<!-- <bean id="valueHolder" class="com.jdc.bean.di.ValueHolder"> 
+			<property name="localDate" value="2022-04-19"></property> 
+			<property name="utilDate" value="2022-04-19"></property> 
+		</bean> 
+		<bean id="conversionService" class="com.jdc.bean.di.CustomConversionService"> 
+			<constructor-arg value="yyyy-MM-dd"></constructor-arg> 
+		</bean> 
+	-->
+
+	<!-- This code is for not using 'ConversionService' -->
+	<!-- 
+	
+		<bean id="dateFormatFactory" class="java.text.SimpleDateFormat"> 
+			<constructor-arg type="java.lang.String" value="yyyy-MM-dd"></constructor-arg> 
+		</bean> 
+		
+		<bean id="valueHolder" class="com.jdc.bean.di.ValueHolder"> 
+			<property name="localDate"> 
+				<bean class="java.time.LocalDate" factory-method="now"></bean> 
+			</property> 
+			
+			<property name="utilDate"> 
+				<bean factory-bean="dateFormatFactory" factory-method="parse"> 
+					<constructor-arg value="2022-04-19"></constructor-arg> 
+				</bean> 
+			</property> 
+		</bean> 
+		
+	-->
+
+
+</beans>

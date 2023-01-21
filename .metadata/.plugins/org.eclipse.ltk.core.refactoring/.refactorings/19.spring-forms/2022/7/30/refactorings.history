@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;19.spring-forms&apos;&#x0D;&#x0A;- Original project: &apos;19.spring-forms&apos;&#x0D;&#x0A;- Original element: &apos;19.spring-forms/src/main/java/com.jdc.async.controller&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdc.async.controller" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdc.async" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1658389851476" subPackages="false" version="1.0"/>
+</session>

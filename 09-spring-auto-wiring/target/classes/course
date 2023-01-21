@@ -1,0 +1,6 @@
+create table course (
+id int primary key auto_increment,
+name varchar(20) unique not null,
+level int default 0,
+month int,
+fees int);

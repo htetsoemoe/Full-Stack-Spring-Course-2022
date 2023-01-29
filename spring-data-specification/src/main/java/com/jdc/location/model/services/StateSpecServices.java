@@ -9,9 +9,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.jdc.location.model.dto.StateDto;
 import com.jdc.location.model.entity.District;
+import com.jdc.location.model.entity.District_;
 import com.jdc.location.model.entity.State;
+import com.jdc.location.model.entity.State_;
 import com.jdc.location.model.repo.DistrictRepo;
 import com.jdc.location.model.repo.StateRepo;
+
+import jakarta.persistence.criteria.JoinType;
 
 @Service
 public class StateSpecServices {
@@ -41,6 +45,19 @@ public class StateSpecServices {
 	public List<StateDto> findDtoByRegion(String region) {
 		return stateRepo.findBy(byRegion(region), 
 				query -> query.project("id", "name", "region").as(StateDto.class).all());
+	}
+	
+	// find State using District name like
+	public List<State> findByDistrictNameLike(String name) {
+		Specification<State> spec = (root, query, criteriaBuilder) -> {
+			// from State s join s.ditrict d
+			var join = root.join(State_.district, JoinType.INNER);
+			
+			// lower(d.name) like :name
+			return criteriaBuilder.like(criteriaBuilder.lower(join.get(District_.name)), name.toLowerCase().concat("%"));
+		};
+		
+		return stateRepo.findAll(spec);
 	}
 	
 	@Transactional

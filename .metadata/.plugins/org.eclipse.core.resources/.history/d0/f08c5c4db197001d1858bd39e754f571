@@ -1,5 +1,0 @@
-package com.jdc.location.model.repo;
-
-public interface StateRepo {
-
-}

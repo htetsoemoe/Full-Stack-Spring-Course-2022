@@ -1,5 +1,0 @@
-package com.jdc.location.services.dto;
-
-public interface StateDto {
-
-}

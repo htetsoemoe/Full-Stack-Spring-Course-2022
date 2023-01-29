@@ -67,4 +67,12 @@ public class State implements Serializable {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return "State [id=" + id + ", name=" + name + ", type=" + type + ", region=" + region + ", capital=" + capital
+				+ ", porpulation=" + porpulation + "]";
+	}
+	
+	
+
 }

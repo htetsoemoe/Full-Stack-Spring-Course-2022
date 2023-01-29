@@ -1,8 +1,0 @@
-package com.jdc.location;
-
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-public class LocationServiceTest {
-
-}

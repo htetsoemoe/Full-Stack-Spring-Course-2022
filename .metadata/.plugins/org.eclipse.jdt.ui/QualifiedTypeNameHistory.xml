@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.test.context.jdbc.Sql"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.repo.DistrictNativeRepo"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
@@ -23,15 +21,11 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvSource"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.NoRepositoryBean"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.ExampleMatcher.StringMatcher"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
     <fullyQualifiedTypeName name="com.jdc.location.services.LocationService"/>
-    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="com.jdc.location.services.dto.StateDto"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.repo.DistrictRepo"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.entity.District"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.ExampleMatcher"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Example"/>
     <fullyQualifiedTypeName name="com.jdc.location.services.dto.DistrictDto"/>
@@ -44,20 +38,26 @@
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PersistenceContext"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.services.StateCriteriaService"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.hibernate.jpa.SpecHints"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaSpecificationExecutor"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.repo.StateRepo"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.services.StateSpecServices"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.dto.StateDto"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.support.JpaRepositoryImplementation"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.repo.DistrictRepo"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.services.StateCriteriaService"/>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.MacOutputStream"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.District"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.entity.State"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.dto.StateDto"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.criteria.JoinType"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.services.StateSpecServices"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>

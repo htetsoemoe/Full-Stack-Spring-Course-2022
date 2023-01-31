@@ -196,4 +196,7 @@
 	<section name="NewRecordWizardPage">
 		<item key="create_unimplemented" value="false"/>
 	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="0"/>
+	</section>
 </section>

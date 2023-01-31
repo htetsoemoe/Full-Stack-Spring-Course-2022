@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="org.springframework.lang.Nullable"/>
@@ -50,7 +48,6 @@
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.services.StateCriteriaService"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.MacOutputStream"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.entity.District"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="com.jdc.location.model.services.StateSpecServices"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.District"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.State_"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.District_"/>
 </qualifiedTypeNameHistroy>

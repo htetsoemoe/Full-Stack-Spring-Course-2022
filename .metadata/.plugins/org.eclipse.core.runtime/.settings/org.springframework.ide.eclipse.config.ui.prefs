@@ -46,6 +46,6 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/901.spring-aop-in-action/src/main/resources/context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage id\="com.springsource.sts.config.ui.editors.aop" index\="3" kind\="formPage" uri\="http\://www.springframework.org/schema/aop"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/hello-maven/src/main/resources/app-config.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/hello-maven/src/test/resources/app-config.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
-//com.springsource.config.ui.prefs.activePageIndex\:/thymeleaf-getting-start-xml/src/main/webapp/WEB-INF/thymeleaf-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage id\="com.springsource.sts.config.ui.editors.beans" index\="3" kind\="formPage" uri\="http\://www.springframework.org/schema/beans"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/thymeleaf-getting-start-xml/src/main/webapp/WEB-INF/thymeleaf-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 com.springsource.config.ui.prefs.tabs.dialog=always
 eclipse.preferences.version=1

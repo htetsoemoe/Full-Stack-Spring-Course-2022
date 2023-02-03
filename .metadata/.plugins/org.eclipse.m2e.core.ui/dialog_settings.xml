@@ -49,6 +49,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.jdc.demo"/>
 			<item value="com.jdc.spring"/>
 			<item value="com.jdc"/>
 			<item value="com.jdc.aop"/>

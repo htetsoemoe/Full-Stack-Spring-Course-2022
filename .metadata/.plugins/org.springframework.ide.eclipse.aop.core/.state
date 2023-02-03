@@ -8,6 +8,7 @@
 <aop-project name="1.ioc-container-project"/>
 <aop-project name="13.2.populate-properties-lifecycle"/>
 <aop-project name="24.spring-mvc-xml"/>
+<aop-project name="thymeleaf-getting-start-xml"/>
 <aop-project name="03-message-source"/>
 <aop-project name="06-hello-spring-bean"/>
 <aop-project name="14.spring-jdbc-hello"/>

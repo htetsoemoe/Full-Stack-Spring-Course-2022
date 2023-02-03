@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
-    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
-    <fullyQualifiedTypeName name="org.springframework.lang.Nullable"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.repo.custom.StateCustomRepo"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.entity.State.Type"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -27,9 +24,7 @@
     <fullyQualifiedTypeName name="org.springframework.data.domain.ExampleMatcher"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Example"/>
     <fullyQualifiedTypeName name="com.jdc.location.services.dto.DistrictDto"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
     <fullyQualifiedTypeName name="org.springframework.lang.NonNull"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
@@ -39,25 +34,30 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.hibernate.jpa.SpecHints"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaSpecificationExecutor"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.repo.StateRepo"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.dto.StateDto"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.support.JpaRepositoryImplementation"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.repo.DistrictRepo"/>
-    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.services.StateCriteriaService"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.MacOutputStream"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.entity.State"/>
     <fullyQualifiedTypeName name="jakarta.persistence.criteria.JoinType"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.services.StateSpecServices"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.repo.StateRepo"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.State"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.criteria.CriteriaBuilder"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.services.SubQueryDemoService"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.repo.DistrictRepo"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.services.DistrictSpecService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.entity.District"/>
-    <fullyQualifiedTypeName name="com.jdc.location.model.entity.State_"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
     <fullyQualifiedTypeName name="com.jdc.location.model.entity.District_"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="com.jdc.location.model.entity.State_"/>
 </qualifiedTypeNameHistroy>

@@ -49,8 +49,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.jdc.demo"/>
 			<item value="com.jdc.spring"/>
+			<item value="com.jdc.demo"/>
 			<item value="com.jdc"/>
 			<item value="com.jdc.aop"/>
 			<item value="com.jdc.fullstack"/>
@@ -58,6 +58,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="thymeleaf-getting-start-java-based"/>
 			<item value="thymeleaf-getting-start-xml"/>
 			<item value="spring-data-custom-repository"/>
 			<item value="spring-data-projections"/>
@@ -72,7 +73,6 @@
 			<item value="29.student_db"/>
 			<item value="28.jpa-collections"/>
 			<item value="27.getting-start-jpa"/>
-			<item value="26.spring-security-jdbc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

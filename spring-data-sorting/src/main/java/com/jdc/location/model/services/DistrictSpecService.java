@@ -3,7 +3,10 @@ package com.jdc.location.model.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +23,7 @@ public class DistrictSpecService {
 	@Autowired
 	private DistrictRepo repo;
 	
+	// create 'sorting' with 'CriteriaBuilder'
 	public List<District> searchByRegion(String region) {
 		
 		return repo.findAll((root, query, cb) -> {
@@ -31,8 +35,20 @@ public class DistrictSpecService {
 		});
 	}
 	
+	// using 'Sort' parameter
 	public List<District> searchByRegionSort(String region, Sort sort) {
-		return repo.findBy((root, query, cb) -> cb.equal(root.get(District_.state).get(State_.region), region),
+		return repo.findBy(forRegion(region),
 				query -> query.sortBy(sort).all());
+	}
+	
+	// Pagination
+	public Page<District> searchByRegion(String region, Pageable page) {
+		return repo.findBy(forRegion(region), query -> query.page(page));
+	}
+	
+	
+	// helper method
+	private Specification<District> forRegion(String region) {
+		return (root, query, cb) -> cb.equal(root.get(District_.state).get(State_.region), region);
 	}
 }

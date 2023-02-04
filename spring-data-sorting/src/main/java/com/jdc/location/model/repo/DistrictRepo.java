@@ -2,6 +2,8 @@ package com.jdc.location.model.repo;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
@@ -23,5 +25,19 @@ public interface DistrictRepo extends JpaRepositoryImplementation<District, Inte
 	// Using Sort Parameter with JPQL
 	@Query("select d from District d where d.state.region = ?1")
 	List<District> searchByRegionSort(String region, Sort sort);
+	
+	/**
+	 * Pagination with Naming Rules and Using JPQL
+	 */
+	
+	// Using Naming Rule
+	Page<District> findByStateRegion(String region, Pageable pageable);
+	
+	// Using JPQL
+	@Query(
+			value = "select d from District d where d.state.region = ?1",
+			countQuery = "select count(d) from District d where d.state.region = ?1"
+	)
+	Page<District> searchByRegion(String region, Pageable pageable);
 	
 }

@@ -22,4 +22,17 @@ public class HomeController {
 				));
 		return "home";
 	}
+	
+	@GetMapping("html5")
+	public String html5(ModelMap map) {
+		map.put("message", "Thymeleaf View with Spring Boot");
+		map.put("list", List.of(
+				"Java Basic",
+				"Spring Framework",
+				"Spring Data JPA",
+				"React JavaScript Library"
+				));
+		
+		return "html-attr";
+	}
 }

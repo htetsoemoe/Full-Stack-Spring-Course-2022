@@ -25,6 +25,7 @@
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:900.getting-start-aop|3:src/main/resources/context.xml|7:beans:6|8:otherBean:19" bean-file="/900.getting-start-aop/src/main/resources/context.xml" bean-start-line="19" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/900.getting-start-aop/src/main/resources/context.xml" source="=900.getting-start-aop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdc.demo.aspects{MessageLogger.java[MessageLogger~doAfter" source-start-line="8" target="=900.getting-start-aop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdc.demo{OtherBean.java[OtherBean~printMessage" target-start-line="4"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="spring-data-sorting"/>
 <aop-project name="09-spring-auto-wiring"/>
 <aop-project name="19.spring-froms"/>
 <aop-project name="02-event-model"/>

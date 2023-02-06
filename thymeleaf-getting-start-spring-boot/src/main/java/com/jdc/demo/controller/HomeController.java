@@ -18,18 +18,18 @@ public class HomeController {
 				"Java Basic",
 				"Spring Framework",
 				"Spring Data JPA",
-				"React JavaScript Library"
+				"Thymeleaf Template Engine"
 				));
 		return "home";
 	}
 	
 	@GetMapping("html5")
 	public String html5(ModelMap map) {
-		map.put("message", "Thymeleaf View with Spring Boot");
+		map.put("message", "React with Spring Boot");
 		map.put("list", List.of(
-				"Java Basic",
-				"Spring Framework",
-				"Spring Data JPA",
+				"JavaScript Basic",
+				"ES6 Features",
+				"Asychronous Programming",
 				"React JavaScript Library"
 				));
 		

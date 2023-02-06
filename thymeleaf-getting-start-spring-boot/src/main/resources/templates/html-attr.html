@@ -16,17 +16,29 @@
 <body>
 
 	<div class="container py-5">
-		<h1>Using HTML5 Data Attributes</h1>
+		<h1 data-th-replace="~{fragments :: #title}">Using HTML5 Data Attributes</h1>
 		
-		<div data-th-text="${message}" class="alert alert-info">
-			Message
+		<div class="mt-3">
+			<div class="row">
+				<div data-th-insert="~{fragments :: nav}" class="col-3"></div>
+			
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="card-title">Using HTML Friendly Markup</h3>
+						</div>
+						<div class="card-body">
+							<h5 data-th-text="${message}">Title</h5>
+							
+							<ul>
+								<li data-th-each="item : ${list}" data-th-text="${item}"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		<ul>
-			<li data-th-each="item : ${list}" data-th-text="${item}">Item</li>
-		</ul>
-		
-		<a data-th-href="@{/}" class="btn btn-primary">Home</a>
+			
 	</div>
 
 </body>

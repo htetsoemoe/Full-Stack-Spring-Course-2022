@@ -35,4 +35,10 @@ public class HomeController {
 		
 		return "html-attr";
 	}
+	
+	@GetMapping("out-text")
+	public String outputText(ModelMap map) {
+		map.put("message", "<b>This is a output message.</b>");	
+		return "outputs";
+	}
 }

@@ -7,6 +7,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.jdc.demo.dto.Account;
+import com.jdc.demo.dto.Contact;
+import com.jdc.demo.dto.Course;
+
 @Controller
 @RequestMapping("/")
 public class HomeController {
@@ -47,5 +51,18 @@ public class HomeController {
 		map.put("message", "This is literal values.");
 		
 		return "literals";
+	}
+	
+	@GetMapping("objects")
+	public String objects(ModelMap map) {
+		map.put("account", new Account(1, "Thaw Thaw", new Contact("099412088264", "thaw@gmail.com")));
+		
+		return "objects";
+	}
+	
+	@GetMapping("records")
+	public String records(ModelMap map) {
+		map.put("course", new Course(1,"Java Basic", 4, "Basic", "Basic Course for Java"));
+		return "records";
 	}
 }

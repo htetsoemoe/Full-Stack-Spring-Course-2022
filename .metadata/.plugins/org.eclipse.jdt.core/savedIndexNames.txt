@@ -54,7 +54,6 @@ INDEX VERSION 1.131+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.ecli
 1045710344.index
 348178303.index
 4174529672.index
-180273987.index
 3061995399.index
 3218495931.index
 1120563355.index
@@ -200,8 +199,8 @@ INDEX VERSION 1.131+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.ecli
 3963732608.index
 1036820533.index
 771504780.index
-3194326370.index
 2208174369.index
+3194326370.index
 400724496.index
 1621946634.index
 3077118802.index
@@ -211,9 +210,9 @@ INDEX VERSION 1.131+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.ecli
 3638745137.index
 2299380496.index
 3854816577.index
-934380583.index
-4107589122.index
 1395557455.index
+4107589122.index
+934380583.index
 995530043.index
 3760905779.index
 2922198015.index

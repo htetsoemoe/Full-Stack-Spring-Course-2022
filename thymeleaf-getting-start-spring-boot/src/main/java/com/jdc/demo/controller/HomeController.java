@@ -41,4 +41,11 @@ public class HomeController {
 		map.put("message", "<b>This is a output message.</b>");	
 		return "outputs";
 	}
+	
+	@GetMapping("literals")
+	public String literals(ModelMap map) {
+		map.put("message", "This is literal values.");
+		
+		return "literals";
+	}
 }

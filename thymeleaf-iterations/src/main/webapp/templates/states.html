@@ -16,6 +16,25 @@
 <body>
 	<div class="container mt-5">
 		<h1>Iteration Demo</h1>
+		
+		<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Region</th>
+				<th>Capital</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-th-each="item : ${list}" data-th-object="${item}">
+				<td data-th-text="*{id}"></td>
+				<td data-th-text="*{name}"></td>
+				<td data-th-text="*{region}"></td>
+				<td data-th-text="*{capital}"></td>
+			</tr>
+		</tbody>
+	</table>
 	</div>
 </body>
 </html>

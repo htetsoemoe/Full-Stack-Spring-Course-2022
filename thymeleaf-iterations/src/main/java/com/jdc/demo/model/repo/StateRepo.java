@@ -1,5 +1,8 @@
 package com.jdc.demo.model.repo;
 
-public interface StateRepo {
+import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
+import com.jdc.demo.model.entity.State;
+
+public interface StateRepo extends JpaRepositoryImplementation<State, Integer>{
 
 }

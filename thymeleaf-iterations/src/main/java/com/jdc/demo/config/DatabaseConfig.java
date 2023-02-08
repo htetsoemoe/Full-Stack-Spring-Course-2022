@@ -19,7 +19,7 @@ import jakarta.persistence.EntityManagerFactory;
 
 @Configuration
 @ComponentScan(basePackages = "com.jdc.demo.model.service")
-@EnableJpaRepositories(basePackages = "com.jdc.deom.model.repo")
+@EnableJpaRepositories(basePackages = "com.jdc.demo.model.repo")
 @EnableTransactionManagement
 public class DatabaseConfig {
 	

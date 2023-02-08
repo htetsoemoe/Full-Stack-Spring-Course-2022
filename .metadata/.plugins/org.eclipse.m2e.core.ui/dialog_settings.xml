@@ -58,6 +58,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="thymeleaf-iterations"/>
 			<item value="thymeleaf-getting-start-java-based"/>
 			<item value="thymeleaf-getting-start-xml"/>
 			<item value="spring-data-custom-repository"/>
@@ -72,7 +73,6 @@
 			<item value="29.jpa-relationships"/>
 			<item value="29.student_db"/>
 			<item value="28.jpa-collections"/>
-			<item value="27.getting-start-jpa"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

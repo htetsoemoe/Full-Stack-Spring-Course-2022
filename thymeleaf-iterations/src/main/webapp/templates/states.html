@@ -22,7 +22,16 @@
 		<div data-th-switch="${size}">
 			<div data-th-case="0" class="alert alert-info">
 				<p>There is no data. Please upload the data.</p>
-				<a href="#" class="btn btn-primary">Upload</a>
+				<a href="#" id="uploadBtn" class="btn btn-primary">Upload</a>
+
+				<script data-th-src="@{/resources/app.js}" type="text/javascript"></script>
+				
+				<form enctype="multipart/form-data" id="uploadForm"
+					data-th-action="@{/states}" method="post" class="d-none">
+					
+					<input type="file" name="file" id="uploadInput" />
+					
+				</form>
 			</div>
 
 			<table data-th-case="*" class="table">

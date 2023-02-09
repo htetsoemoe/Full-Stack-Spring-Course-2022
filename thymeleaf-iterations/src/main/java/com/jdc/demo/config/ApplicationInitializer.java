@@ -2,6 +2,9 @@ package com.jdc.demo.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletRegistration.Dynamic;
+
 public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override
@@ -22,6 +25,12 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
 		return new String[] {
 				"/"
 		};
+	}
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {
+		registration.setLoadOnStartup(1);
+		registration.setMultipartConfig(new MultipartConfigElement(""));
 	}
 
 }

@@ -19,5 +19,12 @@ public class State {
 	private String region;
 	private String capital;
 	
-
+	
+	public State(String line) {
+		var array = line.split("\t");
+		this.name = array[0];
+		this.region = array[1];
+		this.capital = array[2];
+	}
+	
 }

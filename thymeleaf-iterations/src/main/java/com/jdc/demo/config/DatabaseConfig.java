@@ -39,8 +39,8 @@ public class DatabaseConfig {
 		bean.setJpaPropertyMap(Map.of(
 				"hibernate.hbm2ddl.auto", "create",
 				"hibernate.show_sql", true,
-				"hibernate.format_sql", true,
-				"jakarta.persistence.sql-load-script-source", "init.sql"
+				"hibernate.format_sql", true
+				//,"jakarta.persistence.sql-load-script-source", "init.sql"
 		));
 		return bean;
 	}

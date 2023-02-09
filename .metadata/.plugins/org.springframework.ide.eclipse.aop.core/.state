@@ -63,6 +63,7 @@
 <aop-project name="01-ioc-container"/>
 <aop-project name="04-resource-loader"/>
 <aop-project name="13.3.bean-destruction-lifecycle"/>
+<aop-project name="spring-data-locks"/>
 <aop-project name="11.scopes-of-bean"/>
 <aop-project name="spring-data-specification"/>
 <aop-project name="902.spring-aop-aspectj-style"/>

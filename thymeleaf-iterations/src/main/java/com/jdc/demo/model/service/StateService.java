@@ -17,5 +17,9 @@ public class StateService {
 	public List<State> findAll() {
 		return repo.findAll();
 	}
+	
+	public long getAllCount() {
+		return repo.count();
+	}
 
 }

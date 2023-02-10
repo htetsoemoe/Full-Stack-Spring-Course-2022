@@ -21,6 +21,55 @@
 		<h1>
 			<i class="bi bi-pencil"></i> Edit Course
 		</h1>
+
+		<div class="row">
+			<div class="col-6">
+				<form data-th-action="@{/course}" method="post" class="pt-3">
+					<div class="form-group mb-3">
+						<label for="name" class="form-label">Name</label> <input
+							type="text" class="form-control" id="name"
+							placeholder="Enter Name" />
+					</div>
+
+					<div class="form-group mb-3">
+						<label for="level" class="form-label">Level</label> <select
+							name="level" id="level" class="form-select">
+							<option value="">Select One</option>
+						</select>
+					</div>
+
+					<div class="row mb-3">
+						<div class="from-group col">
+							<label for="duration" class="form-label">Duration</label>
+							<div class="input-group">
+								<span class="input-group-text">Months</span> <input
+									type="number" class="form-control" id="duration"
+									placeholder="Enter Duration" />
+							</div>
+						</div>
+
+						<div class="form-group col">
+							<label for="fees" class="form-label">Fees</label>
+							<div class="input-group">
+								<span class="input-group-text">MMK</span> <input type="number"
+									class="form-control" id="fees" placeholder="Enter Fees" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group mb-3">
+						<label for="desciption" class="form-label">Description</label>
+						<textarea class="form-control" id="desciption" rows="3" cols="30"></textarea>
+					</div>
+
+					<div class="from-group">
+						<button type="submit" class="btn btn-outline-danger">
+							<span class="bi bi-save"></span> Save
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

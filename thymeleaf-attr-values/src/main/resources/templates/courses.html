@@ -36,7 +36,7 @@
 			</div>
 			
 			<div class="col btn-wrapper">
-				<button class="btn btn-primary">
+				<button type="submit" class="btn btn-primary">
 					<i class="bi bi-search"></i> Search
 				</button>
 				
@@ -45,6 +45,36 @@
 				</a>
 			</div>
 		</form>
+		
+		<table class="table table-striped mt-4">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Level</th>
+					<th>Months</th>
+					<th>Fees</th>
+					<th>Description</th>
+					<th></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td data-th-text="ID"></td>
+					<td data-th-text="Name"></td>
+					<td data-th-text="Level"></td>
+					<td data-th-text="Months"></td>
+					<td data-th-text="Fees"></td>
+					<td data-th-text="Description"></td>
+					<td>
+						<a data-th-href="@{/course/edit}">
+							<i class="bi bi-pencil"></i>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </body>
 </html>

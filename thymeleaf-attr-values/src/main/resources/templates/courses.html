@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Courses</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" data-th-href="@{/static/css/app.css}" />
+</head>
+<body>
+	<div class="container pt-3">
+		<h1>
+			<i class="bi bi-list"></i> Course List
+		</h1>
+		
+		<form action="#" class="row mt-4">
+			<div class="form-group col-auto">
+				<label for="level" class="form-label">Search Level</label>
+				<select name="level" id="level" class="form-select">
+					<option value="">All Level</option>
+				</select>
+			</div>
+			
+			<div class="form-group col-auto">
+				<label for="name" class="form-label">Search Name</label>
+				<input type="text" class="form-control" placeholder="Search Name" id="name"/>
+			</div>
+			
+			<div class="col btn-wrapper">
+				<button class="btn btn-primary">
+					<i class="bi bi-search"></i> Search
+				</button>
+				
+				<a data-th-href="@{/course/edit}" class="btn btn-outline-secondary">
+					<i class="bi bi-pencil"></i> Add New
+				</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

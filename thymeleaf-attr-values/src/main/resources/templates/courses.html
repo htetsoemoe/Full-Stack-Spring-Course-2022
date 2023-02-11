@@ -21,40 +21,48 @@
 		<h1>
 			<i class="bi bi-list"></i> Course List
 		</h1>
-		
-		<form action="#" class="row mt-4">
-			<div class="form-group col-auto">
-				<label for="level" class="form-label">Search Level</label>
-				<select name="level" id="level" class="form-select">
-					<option value="">All Level</option>
-					<option  data-th-each="item : ${levels}" 
-							data-th-value="${item}" 
-							data-th-text="${item}"
-							data-th-selected="${#strings.equals(item, param.level)}">
-					</option>
-				</select>
+
+		<div class="mt-4 mb-4">
+			<div class="row">
+				<form action="#" class="row mt-4 mb-4">
+					<div class="form-group col-auto">
+						<label for="level" class="form-label">Search Level</label> <select
+							name="level" id="level" class="form-select">
+							<option value="">All Level</option>
+							<option data-th-each="item : ${levels}" data-th-value="${item}"
+								data-th-text="${item}"
+								data-th-selected="${#strings.equals(item, param.level)}">
+							</option>
+						</select>
+					</div>
+
+					<div class="form-group col-auto">
+						<label for="name" class="form-label">Search Name</label> <input
+							type="text" name="name" data-th-value="${param.name}"
+							class="form-control" id="name" placeholder="Search Name" />
+					</div>
+
+					<div class="col btn-wrapper">
+						<button type="submit" class="btn btn-primary">
+							<i class="bi bi-search"></i> Search
+						</button>
+
+						<a data-th-href="@{/course/edit}"
+							class="btn btn-outline-secondary"> <i class="bi bi-pencil"></i>
+							Add New
+						</a>
+					</div>
+				</form>
 			</div>
-			
-			<div class="form-group col-auto">
-				<label for="name" class="form-label">Search Name</label>
-				<input type="text" name="name"
-					data-th-value="${param.name}" 
-					class="form-control" id="name" 
-					placeholder="Search Name"/>
-			</div>
-			
-			<div class="col btn-wrapper">
-				<button type="submit" class="btn btn-primary">
-					<i class="bi bi-search"></i> Search
-				</button>
-				
-				<a data-th-href="@{/course/edit}" class="btn btn-outline-secondary">
-					<i class="bi bi-pencil"></i> Add New
-				</a>
-			</div>
-		</form>
-		
-		<table class="table table-striped mt-4">
+		</div>
+
+
+		<div data-th-if="${#lists.isEmpty(result)}" class="alert alert-info">
+			<p>There is no data.</p>
+		</div>
+
+		<table data-th-unless="${#lists.isEmpty(result)}"
+			class="table table-striped mt-4">
 			<thead>
 				<tr>
 					<th>ID</th>
@@ -66,7 +74,7 @@
 					<th></th>
 				</tr>
 			</thead>
-			
+
 			<tbody>
 				<tr>
 					<td data-th-text="ID"></td>
@@ -75,11 +83,9 @@
 					<td data-th-text="Months"></td>
 					<td data-th-text="Fees"></td>
 					<td data-th-text="Description"></td>
-					<td>
-						<a data-th-href="@{/course/edit}">
-							<i class="bi bi-pencil"></i>
-						</a>
-					</td>
+					<td><a data-th-href="@{/course/edit}"> <i
+							class="bi bi-pencil"></i>
+					</a></td>
 				</tr>
 			</tbody>
 		</table>

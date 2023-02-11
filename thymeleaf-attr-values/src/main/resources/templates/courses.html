@@ -27,12 +27,20 @@
 				<label for="level" class="form-label">Search Level</label>
 				<select name="level" id="level" class="form-select">
 					<option value="">All Level</option>
+					<option  data-th-each="item : ${levels}" 
+							data-th-value="${item}" 
+							data-th-text="${item}"
+							data-th-selected="${#strings.equals(item, param.level)}">
+					</option>
 				</select>
 			</div>
 			
 			<div class="form-group col-auto">
 				<label for="name" class="form-label">Search Name</label>
-				<input type="text" class="form-control" placeholder="Search Name" id="name"/>
+				<input type="text" name="name"
+					data-th-value="${param.name}" 
+					class="form-control" id="name" 
+					placeholder="Search Name"/>
 			</div>
 			
 			<div class="col btn-wrapper">

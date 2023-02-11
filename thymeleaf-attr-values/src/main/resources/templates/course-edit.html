@@ -35,6 +35,7 @@
 						<label for="level" class="form-label">Level</label> <select
 							name="level" id="level" class="form-select">
 							<option value="">Select One</option>
+							<option data-th-each="item : ${levels}" data-th-value="${item}" data-th-text="${item}"></option>
 						</select>
 					</div>
 

@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
@@ -20,8 +21,8 @@ public class Course {
 	@Column(nullable = false, unique = true)
 	private String name;
 	
-	@NotBlank(message = "Please enter course level.")
-	@Column(nullable = false, unique = true)
+	@NotNull(message = "Please enter course level.")
+	@Column(nullable = false, unique = false)
 	private Level level;
 	private int months;
 	private int fees;

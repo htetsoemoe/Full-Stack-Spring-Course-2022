@@ -24,26 +24,37 @@
 
 		<div class="row">
 			<div class="col-6">
-				<form data-th-action="@{/course}" method="post" class="pt-3">
+				<form data-th-object="${course}" data-th-action="@{/course}" method="post" class="pt-3">
+					
+					<input type="hidden" data-th-field="*{id}">
+					
 					<div class="form-group mb-3">
-						<label for="name" class="form-label">Name</label> <input
+						<label for="name" class="form-label">Name</label> 
+						<input
+							data-th-field="*{name}"
 							type="text" class="form-control" id="name"
 							placeholder="Enter Name" />
+						<p class="text-danger" data-th-errors="*{name}"></p>
 					</div>
 
 					<div class="form-group mb-3">
-						<label for="level" class="form-label">Level</label> <select
+						<label for="level" class="form-label">Level</label> 
+						<select
+							data-th-field="*{level}"
 							name="level" id="level" class="form-select">
 							<option value="">Select One</option>
 							<option data-th-each="item : ${levels}" data-th-value="${item}" data-th-text="${item}"></option>
 						</select>
+						<p class="text-danger" data-th-errors="*{level}"></p>
 					</div>
 
 					<div class="row mb-3">
 						<div class="from-group col">
 							<label for="duration" class="form-label">Duration</label>
 							<div class="input-group">
-								<span class="input-group-text">Months</span> <input
+								<span class="input-group-text">Months</span> 
+								<input
+									data-th-field="*{months}"
 									type="number" class="form-control" id="duration"
 									placeholder="Enter Duration" />
 							</div>
@@ -52,7 +63,9 @@
 						<div class="form-group col">
 							<label for="fees" class="form-label">Fees</label>
 							<div class="input-group">
-								<span class="input-group-text">MMK</span> <input type="number"
+								<span class="input-group-text">MMK</span> 
+								<input type="number"
+									data-th-field="*{fees}"
 									class="form-control" id="fees" placeholder="Enter Fees" />
 							</div>
 						</div>
@@ -60,7 +73,7 @@
 
 					<div class="form-group mb-3">
 						<label for="desciption" class="form-label">Description</label>
-						<textarea class="form-control" id="desciption" rows="3" cols="30"></textarea>
+						<textarea data-th-field="*{remark}" class="form-control" id="desciption" rows="3" cols="30"></textarea>
 					</div>
 
 					<div class="from-group">

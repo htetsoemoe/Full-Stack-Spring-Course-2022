@@ -12,6 +12,8 @@ import com.jdc.spring.demo.model.entity.Course;
 import com.jdc.spring.demo.model.entity.Course.Level;
 import com.jdc.spring.demo.model.repo.CourseRepo;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class CourseService {
 
@@ -28,4 +30,12 @@ public class CourseService {
 		return repo.findAll(whichLevel.and(whichName));
 	}
 
+	public Course findById(int id) {
+		return repo.findById(id).orElseThrow();
+	}
+
+	@Transactional
+	public void save(Course course) {
+		repo.save(course);
+	}
 }

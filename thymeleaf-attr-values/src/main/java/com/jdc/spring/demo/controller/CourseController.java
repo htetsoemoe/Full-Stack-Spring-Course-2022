@@ -6,14 +6,16 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.jdc.spring.demo.model.entity.Course;
 import com.jdc.spring.demo.model.entity.Course.Level;
-import com.jdc.spring.demo.model.repo.CourseRepo;
 import com.jdc.spring.demo.model.service.CourseService;
 
 @Controller
@@ -38,8 +40,19 @@ public class CourseController {
 	}
 	
 	@PostMapping
-	public String save() {
+	public String save(@ModelAttribute @Validated Course course, BindingResult result) {
+		
+		if (result.hasErrors()) {
+			return "course-edit";
+		}
+		service.save(course);
+		
 		return "redirect:/course";
+	}
+	
+	@ModelAttribute("course")
+	public Course course(@RequestParam Optional<Integer> id) {
+		return id.filter(a -> a > 0).map(service::findById).orElse(new Course());
 	}
 	
 	@ModelAttribute("levels")

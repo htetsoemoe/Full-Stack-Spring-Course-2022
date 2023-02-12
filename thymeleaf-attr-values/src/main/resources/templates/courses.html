@@ -76,14 +76,14 @@
 			</thead>
 
 			<tbody>
-				<tr>
-					<td data-th-text="ID"></td>
-					<td data-th-text="Name"></td>
-					<td data-th-text="Level"></td>
-					<td data-th-text="Months"></td>
-					<td data-th-text="Fees"></td>
-					<td data-th-text="Description"></td>
-					<td><a data-th-href="@{/course/edit}"> <i
+				<tr data-th-each="data : ${result}" data-th-object="${data}">
+					<td data-th-text="*{id}"></td>
+					<td data-th-text="*{name}"></td>
+					<td data-th-text="*{level}"></td>
+					<td data-th-text="*{months}"></td>
+					<td data-th-text="*{fees}"></td>
+					<td data-th-text="*{remark}"></td>
+					<td><a data-th-href="@{/course/edit(id=*{id})}"> <i
 							class="bi bi-pencil"></i>
 					</a></td>
 				</tr>

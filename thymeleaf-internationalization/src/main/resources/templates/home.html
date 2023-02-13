@@ -20,6 +20,24 @@
 	<div class="navbar navbar-expand navbar-dark bg-primary mb-4">
 		<div class="container">
 			<span data-th-text="#{title}" class="navbar-brand">App Title</span>
+		
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-th-text="#{|lang.${#locale}|}">Language</a>
+				
+					<ul class="dropdown-menu">
+						<li>
+							<a data-th-href="@{''(lang=en_US)}" data-th-text="#{lang.en_US}" data-th-classappend="${#strings.equals('en_US', #locale) ? 'active' : '' }" class="dropdown-item">Language</a>
+						</li>
+						<li>
+							<a data-th-href="@{''(lang=ja_JP)}" data-th-text="#{lang.ja_JP}" data-th-classappend="${#strings.equals('ja_JP', #locale) ? 'active' : '' }" class="dropdown-item">Language</a>
+						</li>
+						<li>
+							<a data-th-href="@{''(lang=my_MM)}" data-th-text="#{lang.my_MM}" data-th-classappend="${#strings.equals('my_MM', #locale) ? 'active' : '' }" class="dropdown-item">Language</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</div>
 	

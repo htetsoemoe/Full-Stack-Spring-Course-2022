@@ -31,7 +31,7 @@ public class ThymeleafConfig {
 	ThymeleafViewResolver viewResolver(SpringTemplateEngine templateEngine) {
 		var bean = new ThymeleafViewResolver();
 		bean.setTemplateEngine(templateEngine);
-		bean.setContentType("text/html");
+		bean.setContentType("text/html");// Set Unicode Content Type
 		
 		return bean;
 	}

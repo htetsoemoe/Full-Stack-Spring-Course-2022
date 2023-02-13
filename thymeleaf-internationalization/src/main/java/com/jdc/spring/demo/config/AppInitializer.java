@@ -12,7 +12,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		return new Class<?>[] {
-			WebConfig.class, ThymeleafConfig.class, InternationalizationConfig.class
+			WebConfig.class, ThymeleafConfig.class
 		};
 	}
 

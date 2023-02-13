@@ -22,5 +22,28 @@
 			<span data-th-text="#{title}" class="navbar-brand">App Title</span>
 		</div>
 	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<table class="table table-border table-striped">
+					<tr>
+						<th data-th-text="#{lbl.name}">Name</th>
+						<th data-th-text="#{lbl.value}">Value</th>
+					</tr>
+					
+					<tr>
+						<td data-th-text="#{lbl.locale}">Locale</td>
+						<td data-th-text="${#locale}"></td>
+					</tr>
+					
+					<tr>
+						<td data-th-text="#{lbl.language}">Language</td>
+						<td data-th-text="#{|lang.${#locale}|}"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

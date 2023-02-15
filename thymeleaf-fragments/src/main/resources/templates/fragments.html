@@ -5,11 +5,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div data-th-fragment="cardItem" class="card">
-		<img data-th-src="@{/images/product1.jpg}" class="card-img-top card-item-image" alt="" />
+	<div data-th-fragment="cardItem(product)" class="card">
+		<img data-th-src="@{|/images/${product.image}|}" class="card-img-top card-item-image" alt="" />
 		
 		<div class="card-body">
-			<h5 class="card-title">My Product</h5>
+			<h5 data-th-text="${product.name}" class="card-title">My Product</h5>
 		</div>
 	</div>
 </body>

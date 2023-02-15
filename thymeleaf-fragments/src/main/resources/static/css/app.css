@@ -1,0 +1,6 @@
+@charset "ISO-8859-1";
+
+.card-item-image {
+	height: 150px;
+	object-fit: cover;
+}

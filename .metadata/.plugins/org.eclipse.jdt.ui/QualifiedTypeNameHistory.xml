@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.annotation.Nullable"/>
-    <fullyQualifiedTypeName name="jakarta.annotation.Nonnull"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Version"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
@@ -34,7 +31,6 @@
     <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.model.repo.CourseRepo"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -53,11 +49,15 @@
     <fullyQualifiedTypeName name="org.springframework.context.support.ResourceBundleMessageSource"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.config.WebConfig"/>
-    <fullyQualifiedTypeName name="com.jdc.spring.demo.config.InternationalizationConfig"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver"/>
     <fullyQualifiedTypeName name="org.thymeleaf.spring6.SpringTemplateEngine"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.config.ThymeleafConfig"/>
     <fullyQualifiedTypeName name="org.thymeleaf.spring6.view.ThymeleafViewResolver"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+    <fullyQualifiedTypeName name="com.jdc.spring.demo.config.InternationalizationConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

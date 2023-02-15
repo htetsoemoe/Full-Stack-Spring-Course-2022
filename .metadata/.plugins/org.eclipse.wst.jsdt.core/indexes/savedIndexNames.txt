@@ -3,7 +3,6 @@ INDEX VERSION 1.4+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.eclips
 3168688918.index
 2873723611.index
 530881455.index
-1025742620.index
 459797744.index
 785143352.index
 1025742620.index

@@ -53,11 +53,11 @@
     <fullyQualifiedTypeName name="com.jdc.spring.demo.config.InternationalizationConfig"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jdc.demo.controller.Product"/>
     <fullyQualifiedTypeName name="com.jdc.demo.controller.ProductService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>

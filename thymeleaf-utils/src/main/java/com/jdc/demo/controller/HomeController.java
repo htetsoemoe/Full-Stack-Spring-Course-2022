@@ -14,11 +14,26 @@ public class HomeController {
 		return "home";
 	}
 	
-	@GetMapping("basic")
-	public String basicData(ModelMap map) {
+	@GetMapping("objects")
+	public String object(ModelMap map) {
 		map.put("nullValue", null);
 		map.put("notNullValue", "This is not null");
-		return "basic-data";
+		return "object";
+	}
+	
+	@GetMapping("bools")
+	public String bools() {
+		return "bools";
+	}
+	
+	@GetMapping("numbers")
+	public String numbers() {
+		return "numbers";
+	}
+	
+	@GetMapping("strings")
+	public String strings() {
+		return "strings";
 	}
 	
 	@GetMapping("collections")

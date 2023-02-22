@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE <html></html>
 <html data-th-fragment="common(title, content, current)">
 <head>
 <meta charset="ISO-8859-1">
@@ -22,8 +22,19 @@
 			
 			<ul class="navbar-nav">
 				<li data-th-replace="~{/fragments/menus :: menuItem('Home', @{/}, ${current == 'home' ? 'active' : _})}"></li>
-				<li data-th-replace="~{/fragments/menus :: menuItem('Basic Data Type', @{/basic}, ${current == 'basic-data' ? 'active' : _})}"></li>
 				<li data-th-replace="~{/fragments/menus :: menuItem('Date & Time', @{/dates}, ${current == 'dates' ? 'active' : _})}"></li>
+				
+				<li class="nav-item dropdown">
+					<a href="#" data-th-classappend="${#strings.startsWith(current, 'basic') ? 'active' : _}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Basic Data Types</a>
+					
+					<ul class="dropdown-menu">
+						<li><a data-th-href="@{/objects}" data-th-classappend="${#strings.endsWith(current, 'object') ? 'active' : _}" class="dropdown-item">Objects</a></li>
+						<li><a data-th-href="@{/bools}" data-th-classappend="${#strings.endsWith(current, 'bools') ? 'active' : _}" class="dropdown-item">Boolean</a></li>
+						<li><a data-th-href="@{/numbers}" data-th-classappend="${#strings.endsWith(current, 'numbers') ? 'active' : _}" class="dropdown-item">Numbers</a></li>
+						<li><a data-th-href="@{/strings}" data-th-classappend="${#strings.endsWith(current, 'strings') ? 'active' : _}" class="dropdown-item">Strings</a></li>
+					</ul>
+				</li>
+				
 				<li data-th-replace="~{/fragments/menus :: menuItem('Collections', @{/collections}, ${current == 'collections' ? 'active' : _})}"></li>
 				<li data-th-replace="~{/fragments/menus :: menuItem('Other Utilis', @{/others}, ${current == 'others' ? 'active' : _})}"></li>
 			</ul>

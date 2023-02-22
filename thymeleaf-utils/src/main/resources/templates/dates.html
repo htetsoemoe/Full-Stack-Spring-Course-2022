@@ -6,7 +6,46 @@
 </head>
 <body>
 	<main>
-		<p>This is Utility for Date Time.</p>
+		<h5>This is Date Time Utilities.</h5>
+		
+		<div class="row" data-th-with="pattern = 'yyyy-MM-dd HH:mm'">
+			
+			<div class="col">
+				<div class="card" data-th-with="date = ${#dates.createNow()}">
+					<div class="card-header">
+						<h6 class="card-title">Java Utility Date</h6>
+					</div>
+					
+					<div class="card-body">
+						<p data-th-text="${#dates.format(date, pattern)}"></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card" data-th-with="calendar = ${#calendars.createNow()}">
+					<div class="card-header">
+						<h6 class="card-title">Java Utility Calendars</h6>
+					</div>
+					
+					<div class="card-body">
+						<p data-th-text="${#calendars.format(calendar, pattern)}"></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card" data-th-with="dateTime = ${#temporals.createNow()}">
+					<div class="card-header">
+						<h6 class="card-title">Java Utility Temporals</h6>
+					</div>
+					
+					<div class="card-body">
+						<p data-th-text="${#temporals.format(dateTime, pattern)}"></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 </body>
 </html>

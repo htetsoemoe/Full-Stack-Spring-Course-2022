@@ -25,8 +25,8 @@
 		</list>
 	</section>
 	<section name="EditorSelectionDialog">
-		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".sql"/>
-		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="true"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe"/>
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".html"/>
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.ui.browser.editor"/>
 	</section>
 </section>

@@ -1,6 +1,7 @@
 package com.jdc.demo.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,7 +15,9 @@ public class HomeController {
 	}
 	
 	@GetMapping("basic")
-	public String basicData() {
+	public String basicData(ModelMap map) {
+		map.put("nullValue", null);
+		map.put("notNullValue", "This is not null");
 		return "basic-data";
 	}
 	

@@ -21,7 +21,6 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotBlank"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.support.JpaRepositoryImplementation"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.model.entity.Course.Level"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.model.service.CourseService"/>
     <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
@@ -37,7 +36,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.EnableWebMvc"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurer"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.context.MessageSource"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ResourceBundleMessageSource"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer"/>
@@ -52,12 +50,14 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.config.InternationalizationConfig"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jdc.demo.controller.Product"/>
     <fullyQualifiedTypeName name="com.jdc.demo.controller.ProductService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>

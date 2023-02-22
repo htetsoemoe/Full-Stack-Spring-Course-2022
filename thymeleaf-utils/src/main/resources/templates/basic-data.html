@@ -6,7 +6,49 @@
 </head>
 <body>
 	<main>
-		<p>This is Utility for Basic Data Types.</p>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>About</th>
+					<th>Expression</th>
+					<th>Output</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>NullSafe Call with Not Null value</td>
+					<td>${#objects.nullSafe(notNullValue, 'Value is null.')}</td>
+					
+					<!-- in-line expression -->
+					<td>[[${#objects.nullSafe(notNullValue, 'Value is null.')}]]</td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>NullSafe Call with Null value</td>
+					<td>${#objects.nullSafe(nullValue, 'Value is null.')}</td>
+					
+					<!-- thymeleaf standard expression -->
+					<td data-th-text="${#objects.nullSafe(nullValue, 'Value is null.')}"></td>
+				</tr>
+				
+				<tr>
+					<td>NullSafe Call with Not Null value</td>
+					<td>${notNullValue ?: 'Value is Null'}</td>
+					
+					<!-- in-line expression -->
+					<td>[[${notNullValue ?: 'Value is Null'}]]</td>
+				</tr>
+				
+				<tr>
+					<td>NullSafe Call with Null value</td>
+					<td>${nullValue ?: 'Value is Null'}</td>
+					
+					<!-- in-line expression -->
+					<td>[[${nullValue ?: 'Value is Null'}]]</td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 </body>
 </html>

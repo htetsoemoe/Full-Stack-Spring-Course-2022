@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html data-th-replace="~{/fragments/layout :: common('Boolean Type', ~{home :: main}, 'basic,bools')}">
+<html
+	data-th-replace="~{/fragments/layout :: common('Boolean Utility', ~{bools :: main}, 'basic,bools')}">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
 	<main>
-		<p>This is home for Thymeleaf Utility Object Demo.</p>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>About</th>
+					<th>Expression</th>
+					<th>Output</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Array And</td>
+					<td>${#bools.arrayAnd({true, true})}</td>
+					<td data-th-text="${#bools.arrayAnd({true, true})}"></td>
+				</tr>
+				<tr>
+					<td>Array And</td>
+					<td>${#bools.arrayAnd({true, false})}</td>
+					<td data-th-text="${#bools.arrayAnd({true, false})}"></td>
+				</tr>
+				<tr>
+					<td>Array Or</td>
+					<td>${#bools.arrayOr({true, false})}</td>
+					<td data-th-text="${#bools.arrayAnd({true, false})}"></td>
+				</tr>
+				<tr>
+					<td>Array Or</td>
+					<td>${#bools.arrayOr({false, false})}</td>
+					<td data-th-text="${#bools.arrayAnd({false, false})}"></td>
+				</tr>
+				<tr>
+					<td>Null Value</td>
+					<td>${#bools.isTrue(null)}</td>
+					<td data-th-text="${#bools.isTrue(null)}"></td>
+				</tr>
+				<tr>
+					<td>Null Value</td>
+					<td>${#bools.isFalse(null)}</td>
+					<td data-th-text="${#bools.isFalse(null)}"></td>
+				</tr>
+				<tr>
+					<td>Number Value</td>
+					<td>${#bools.isTrue(528)}</td>
+					<td data-th-text="${#bools.isTrue(528)}"></td>
+				</tr>
+				<tr>
+					<td>False Value Strings</td>
+					<td>${#bools.arrayOr({'off', 'Off', 'false', 'False', 'No', 'no'})}</td>
+					<td data-th-text="${#bools.arrayOr({'off', 'Off', 'false', 'False', 'No', 'no'})}"></td>
+				</tr>
+				<tr>
+					<td>True Value Strings</td>
+					<td>${#bools.arrayOr({'on', 'On', 'true', 'True', 'yes', 'Yes'})}</td>
+					<td data-th-text="${#bools.arrayOr({'on', 'On', 'true', 'True', 'yes', 'Yes'})}"></td>
+				</tr>
+			</tbody>			
+		</table>
 	</main>
 </body>
 </html>

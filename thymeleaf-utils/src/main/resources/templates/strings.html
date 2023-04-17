@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html data-th-replace="~{/fragments/layout :: common('String Types', ~{strings :: main}, 'basic,strings')}">
+<html data-th-replace="~{/fragments/layout :: common('String Types', ~{strings :: main}, 'basic,strings')}" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-	<main>
-		<p>This is home for Thymeleaf Utility Object Demo.</p>
+	<main class="container">
+		<table class="table border mt-5">
+			<thead class="bg-info">
+				<tr>
+				<td>About</td>
+				<td>Expression</td>
+				<td>Arg Values</td>
+				<td>Output</td>
+			</tr>
+			</thead>
+			<tbody>
+				<tr th:with="message='Hello Thymeleaf'">
+					<td rowspan="2">Is Empty String</td>
+					<td rowspan="2">${#strings.isEmpty(message)}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.isEmpty(message)}"></td>
+				</tr>
+				
+				<tr th:with="message=''">
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.isEmpty(message)}"></td>
+				</tr>
+				
+				<tr th:with="message='Hello Thymeleaf'">
+					<td>Length of String</td>
+					<td>${#strings.length(message)}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.length(message)}"></td>
+				</tr>
+				
+				<tr th:with="message='Hello Thymeleaf',search='hello'">
+					<td>Contains</td>
+					<td>${#strings.contains(message, search)}</td>
+					<td th:text="|message=${message}, search=${search}|"></td>
+					<td th:text="${#strings.contains(message, search)}"></td>
+				</tr>
+				
+				<tr th:with="message='Hello Thymeleaf',search='hello'">
+					<td>Contains but Ignore</td>
+					<td>${#strings.containsIgnoreCase(message, search)}</td>
+					<td th:text="|message=${message}, search=${search}|"></td>
+					<td th:text="${#strings.containsIgnoreCase(message, search)}"></td>
+				</tr>
+				
+				<tr th:with="message=''">
+					<td rowspan="2">Default String</td>
+					<td>${#strings.defaultString(message, 'There is no messages.')}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.defaultString(message, 'There is no messages.')}"></td>
+				</tr>
+				
+				<tr th:with="message='Hey There!'">
+					<td>${#strings.defaultString(message, 'There is no messages.')}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.defaultString(message, 'There is no messages.')}"></td>
+				</tr>
+				
+				<tr>
+					<td>Escape XML</td>
+					<td>${#strings.escapeXml(escapeXML)}</td>
+					<td th:text="${escapeXML}"></td>
+					<td th:text="${#strings.escapeXml(escapeXML)}"></td>
+				</tr>
+				
+				<tr>
+					<td>Escape Java</td>
+					<td>${#strings.escapeJava(escapeString)}</td>
+					<td th:text="${escapeString}"></td>
+					<td th:text="${#strings.escapeJava(escapeString)}"></td>
+				</tr>
+				
+				<tr>
+					<td>Escape JavaScript</td>
+					<td>${#strings.escapeJavaScript(escapeString)}</td>
+					<td th:text="${escapeString}"></td>
+					<td th:text="${#strings.escapeJavaScript(escapeString)}"></td>
+				</tr>
+				
+				<tr th:with="message='To Be With You'">
+					<td>Abbreviate String</td>
+					<td>${#strings.abbreviate(message, 10)}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.abbreviate(message, 10)}"></td>
+				</tr>
+				
+				<tr th:with="message='to be with you'">
+					<td>Capitalize</td>
+					<td>th:text="${#strings.capitalize(message)}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.capitalize(message)}"></td>
+				</tr>
+				
+				<tr th:with="message='to be with you'">
+					<td>Capitalize Words</td>
+					<td>th:text="${#strings.capitalizeWords(message)}"</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.capitalizeWords(message)}"></td>
+				</tr>
+				
+				<tr th:with="message='hello thymeleaf spring-mvc'">
+					<td>Capitalize Words</td>
+					<td>${#strings.capitalizeWords(#strings.capitalizeWords(message, '-'))}</td>
+					<td th:text="${message}"></td>
+					<td th:text="${#strings.capitalizeWords(#strings.capitalizeWords(message, '-'))}"></td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 </body>
 </html>

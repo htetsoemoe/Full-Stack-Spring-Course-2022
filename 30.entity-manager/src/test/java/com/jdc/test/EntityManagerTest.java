@@ -4,11 +4,13 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import org.hibernate.LazyInitializationException;
 import org.hibernate.annotations.Parent;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -81,6 +83,25 @@ public class EntityManagerTest {
 				() -> assertEquals("Thaw Thaw", member.getName()),
 				() -> assertEquals(Role.Admin, member.getRole()),
 				() -> assertEquals("admin", member.getLoginId())
+		);
+	}
+	
+	@Order(3)
+	@ParameterizedTest
+	@ValueSource(ints = 1)
+	void test_getReference(int id) {
+		var em = emf.createEntityManager();
+		var member = em.getReference(Member.class, id);
+		
+		assertNotNull(member);
+		assertTrue(em.contains(member));
+		
+		em.detach(member);
+		
+		assertAll(
+				() -> assertThrows(LazyInitializationException.class, () -> member.getName()),
+				() -> assertThrows(LazyInitializationException.class, () -> member.getRole()),
+				() -> assertThrows(LazyInitializationException.class, () -> member.getLoginId())
 		);
 	}
 	

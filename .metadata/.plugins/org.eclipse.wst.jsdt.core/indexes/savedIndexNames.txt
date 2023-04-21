@@ -1,6 +1,5 @@
 INDEX VERSION 1.4+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 4177820211.index
-3168688918.index
 2873723611.index
 530881455.index
 459797744.index
@@ -17,8 +16,8 @@ INDEX VERSION 1.4+D:\Full-Stack-Spring-Course-2022\.metadata\.plugins\org.eclips
 1794655506.index
 2357579054.index
 2183227097.index
-3346546632.index
-3367600139.index
 4110129022.index
+3367600139.index
+3346546632.index
 2312039585.index
 4039946078.index

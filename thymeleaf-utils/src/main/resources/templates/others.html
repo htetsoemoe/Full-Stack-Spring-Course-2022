@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-th-replace="~{/fragments/layout :: common('Other Data Types', ~{others :: main}, 'others')}">
+<html xmlns:th="http://www.thymeleaf.org" data-th-replace="~{/fragments/layout :: common('Other Data Types', ~{others :: main}, 'others')}">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -7,6 +7,29 @@
 <body>
 	<main>
 		<p>This is Utility for Others.</p>
+		
+		<div class="card mt-4">
+			<div class="card-body">
+				<h4 class="card-title">Using IDS</h4>
+				
+				<div class="d-flex">
+					<div class="me-2 form-check form-check-inline" th:each="item : ${subjects}">
+						<input type="checkbox" th:id="${#ids.seq('subject')}"/>
+						<label th:for="${#ids.prev('subject')}" th:text="${item}" class="form-check-label"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card mt-4">
+			<div class="card-body">
+				<h4 class="card-title">Base Expression Objects</h4>
+				
+				<span>Static Variable from Thymeleaf Context : </span> <strong th:text="${#ctx.hello}"></strong>
+				<br />
+				<span>Local : </span> <strong th:text="${#locale}"></strong>
+			</div>
+		</div>
 	</main>
 </body>
 </html>

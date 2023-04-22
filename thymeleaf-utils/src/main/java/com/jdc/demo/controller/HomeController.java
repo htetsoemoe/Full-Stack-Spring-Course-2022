@@ -1,5 +1,8 @@
 package com.jdc.demo.controller;
 
+import java.util.Comparator;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,7 +42,9 @@ public class HomeController {
 	}
 	
 	@GetMapping("collections")
-	public String collections() {
+	public String collections(ModelMap model) {
+		Comparator<Integer> reverse = (o1, o2) -> o2 - 01;
+		model.put("reverseSort", reverse);
 		return "collections";
 	}
 	
@@ -49,7 +54,8 @@ public class HomeController {
 	}
 	
 	@GetMapping("others")
-	public String otherUtilis() {
+	public String otherUtilis(ModelMap model) {
+		model.put("subjects", List.of("Java", "Spring", "React", "Angular"));
 		return "others";
 	}
 

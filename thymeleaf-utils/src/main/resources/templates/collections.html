@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-th-replace="~{/fragments/layout :: common('Collections', ~{collections :: main}, 'collections')}">
+<html xmlns:th="http://www.thymeleaf.org" data-th-replace="~{/fragments/layout :: common('Collections', ~{collections :: main}, 'collections')}">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -7,6 +7,69 @@
 <body>
 	<main>
 		<p>This is Utility for Collections.</p>
+		
+		<table class="table">
+			<thead>
+				<tr>
+					<th>About</th>
+					<th>Value</th>
+					<th>Expression</th>
+					<th>Output</th>
+				</tr>
+			</thead>
+			
+			<tbody th:with="list = ${ {3, 4, 5, 1, 2} }">
+				<tr>
+					<td>Size of List</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.size(list)}</td>
+					<td th:text="${#lists.size(list)}"></td>
+				</tr>
+				
+				<tr>
+					<td>Is Empty</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.isEmpty(list)}</td>
+					<td th:text="${#lists.isEmpty(list)}"></td>
+				</tr>
+				
+				<tr>
+					<td>Contain Element</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.contains(list, 2)}</td>
+					<td th:text="${#lists.contains(list, 2)}"></td>
+				</tr>
+				
+				<tr>
+					<td>Contain All</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.containsAll(list, {1, 2, 3} )}</td>
+					<td th:text="${#lists.containsAll(list, {1, 2, 3} )}"></td>
+				</tr>
+				
+				<tr th:with="sortedList = ${#lists.sort(list)}">
+					<td>Sort</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.sort(list)}</td>
+					<td>
+						<ul>
+							<li th:each="ele : ${sortedList}" th:text="${ele}"></li>
+						</ul>
+					</td>
+				</tr>
+				
+				<tr th:with="reverseList = ${#lists.sort(list, reverseSort)}">
+					<td>Sort with Comparator</td>
+					<td th:text="${list}"></td>
+					<td>${#lists.sort(list, reverseSort)}</td>
+					<td>
+						<ul>
+							<li th:each="ele : ${reverseList}" th:text="${ele}"></li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 </body>
 </html>

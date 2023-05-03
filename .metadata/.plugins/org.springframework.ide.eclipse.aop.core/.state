@@ -28,8 +28,8 @@
 </aop-project>
 <aop-project name="2.jdbc-template-assignment"/>
 <aop-project name="26.spring-security-jdbc"/>
-<aop-project name="spring-data-projections"/>
 <aop-project name="spring-data-custom-methods"/>
+<aop-project name="spring-data-projections"/>
 <aop-project name="04-resource-loader"/>
 <aop-project name="spring-data-locks"/>
 <aop-project name="spring-data-specification"/>
@@ -72,4 +72,5 @@
 <aop-project name="13.3.bean-destruction-lifecycle"/>
 <aop-project name="11.scopes-of-bean"/>
 <aop-project name="902.spring-aop-aspectj-style"/>
+<aop-project name="spel01-hello"/>
 </aop-reference-model>

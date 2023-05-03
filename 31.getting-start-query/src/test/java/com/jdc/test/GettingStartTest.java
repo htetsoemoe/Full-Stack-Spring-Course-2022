@@ -24,7 +24,7 @@ public class GettingStartTest extends AbstractTest{
 	void select_count() {
 
 		var query = em.createNamedQuery("Category.allCount", Long.class);
-
+	
 		var count = query.getSingleResult();
 		assertEquals(7, count);
 	}

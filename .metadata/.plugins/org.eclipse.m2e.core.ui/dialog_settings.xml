@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Full-Stack-Spring-Course-2022\spel01-hello"/>
 			<item value="D:\full-stack-spring\spring-data-projections\src\main\java\com\jdc\location\model\entity\State.java"/>
 			<item value="D:\full-stack-spring\24.spring-mvc-xml"/>
 			<item value="D:\full-stack-spring\22.async-request-mvc"/>
@@ -58,6 +59,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spel02-bean-configurations"/>
 			<item value="spel01-hello"/>
 			<item value="thymeleaf-internationalization"/>
 			<item value="thymeleaf-iterations"/>
@@ -72,7 +74,6 @@
 			<item value="getting-start-query"/>
 			<item value="3.leave-management-system"/>
 			<item value="29.jpa-relationship"/>
-			<item value="29.jpa-relationships"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

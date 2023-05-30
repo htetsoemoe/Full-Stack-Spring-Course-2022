@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="jakarta.persistence.MapsId"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PrimaryKeyJoinColumn"/>
     <fullyQualifiedTypeName name="com.jdc.spring.demo.Profile"/>
@@ -41,7 +39,6 @@
     <fullyQualifiedTypeName name="org.springframework.expression.ExpressionParser"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
     <fullyQualifiedTypeName name="org.springframework.expression.spel.support.SimpleEvaluationContext"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="org.springframework.expression.spel.SpelEvaluationException"/>
     <fullyQualifiedTypeName name="org.springframework.expression.spel.SpelParserConfiguration"/>
     <fullyQualifiedTypeName name="org.springframework.expression.spel.standard.SpelExpressionParser"/>
@@ -49,15 +46,18 @@
     <fullyQualifiedTypeName name="java.nio.file.Path"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.jdc.demo.ImageFileProvider"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="com.jdc.demo.ElJavaConfiguration"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-    <fullyQualifiedTypeName name="org.springframework.test.context.junit.jupiter.SpringJUnitConfig"/>
-    <fullyQualifiedTypeName name="com.jdc.demo.ExpressionConfigDemo"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.junit.jupiter.SpringJUnitConfig"/>
+    <fullyQualifiedTypeName name="com.jdc.demo.ExpressionConfigDemo"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>
